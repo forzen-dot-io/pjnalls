@@ -1,0 +1,24 @@
+.header {
+  &__logo {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    color: $primary-dark-color;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -ms-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  &__menu {
+    > span {
+      display: block;
+      width: 26px;
+      height: 3px;
+      background-color: $primary-dark-color;
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
