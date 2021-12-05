@@ -1,4 +1,8 @@
 .header {
+  nav {
+    padding: 20px;
+  }
+
   &__logo {
     text-decoration: none;
     font-size: 28px;
@@ -19,6 +23,12 @@
       &:not(:last-child) {
         margin-bottom: 4px;
       }
+    }
+  }
+  &__links {
+
+    a {
+      font-size: $font-size-md;
     }
   }
 }
