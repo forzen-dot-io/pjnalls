@@ -23,3 +23,20 @@
     align-items: center;
   }
 }
+
+button,
+.btn {
+  padding: 1rem 1.875rem;
+  background: $primary-dark-color;
+  background-image: linear-gradient(
+    to bottom right,
+    $primary-dark-color,
+    $primary-dark-color,
+    $tertiary-dark-color,
+  );
+  color: $primary-light-color;
+  border: 0;
+  border-radius: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
