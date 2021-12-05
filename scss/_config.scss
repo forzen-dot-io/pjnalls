@@ -1,0 +1,17 @@
+/** Color scheme */
+$primary-dark-color: #561ec2;
+$secondary-dark-color: #3600a0;
+$tertiary-dark-color: #325019;
+$primary-light-color: #fefcef;
+$secondary-light-color: #ffd963;
+$tertiary-light-color: #e4bf57;
+$primary-accent-color: #e23e76;
+$secondary-accent-color: #f0f0f0;
+
+
+/** Reset all elements in markup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
