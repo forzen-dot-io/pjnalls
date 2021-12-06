@@ -26,14 +26,13 @@
 
 button,
 .btn {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 1.875rem;
   background: $primary-dark-color;
   background-image: linear-gradient(
     to right,
     $primary-dark-color,
     $secondary-dark-color,
   );
-  color: $primary-light-color;
   border: 0;
   border-radius: 50px;
   font-weight: 400;
