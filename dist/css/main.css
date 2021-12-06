@@ -263,7 +263,7 @@ button,
 
 .hero__text {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
   left: 0;
   right: 0;
