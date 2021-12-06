@@ -64,7 +64,7 @@ a:hover {
 
 button,
 .btn {
-  padding: 0.875rem 1.875rem;
+  padding: 0.5rem 1.875rem;
   background: #561ec2;
   background-image: -webkit-gradient(linear, left top, right top, from(#561ec2), to(#4678a9));
   background-image: linear-gradient(to right, #561ec2, #4678a9);
@@ -95,6 +95,10 @@ button,
 .header.open .header__overlay {
   opacity: 1;
   z-index: 2;
+}
+
+.header.open .header__overlay--menu {
+  top: calc(64px + 1.25rem);
 }
 
 .header nav {
@@ -209,6 +213,34 @@ button,
   display: block;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
+}
+
+.header__overlay--menu {
+  position: relative;
+  top: -240px;
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+  max-width: 52em;
+  background: #fefcef;
+  border-radius: 8px;
+  -webkit-transition: top 300ms ease-in-out;
+  transition: top 300ms ease-in-out;
+}
+
+.header__overlay--menu a {
+  display: block;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #4678a9;
+  padding: 1rem;
+}
+
+.header__overlay--menu a:hover {
+  color: #947f37;
+}
+
+.header__overlay--menu :last-child {
+  padding-bottom: 2rem;
 }
 
 /** Breakpoints */
