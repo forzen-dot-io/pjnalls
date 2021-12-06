@@ -1,2 +1,2 @@
 # pjnalls
-A homepage for pjnalls, forzen.
+A homepage for pjnalls on forzen.io (WIP).
