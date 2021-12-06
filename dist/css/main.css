@@ -64,11 +64,10 @@ a:hover {
 
 button,
 .btn {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 1.875rem;
   background: #561ec2;
   background-image: -webkit-gradient(linear, left top, right top, from(#561ec2), to(#4678a9));
   background-image: linear-gradient(to right, #561ec2, #4678a9);
-  color: #fefcef;
   border: 0;
   border-radius: 50px;
   font-weight: 400;
@@ -103,6 +102,16 @@ button,
 
 .header__links a {
   font-size: 1.125rem;
+  color: #4678a9;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__cta {
+  font-size: 0.875rem;
+  color: #fefcef;
 }
 
 /** Breakpoints */
