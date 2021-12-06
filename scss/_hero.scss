@@ -1,0 +1,43 @@
+.hero {
+  &__image {
+    position: relative;
+    background-color: $primary-light-color;
+    background-image: linear-gradient(
+        to top,
+        rgba($primary-light-color, 1),
+        rgba($primary-light-color, 0.8),
+        rgba($secondary-light-color, 0.33)
+      ),
+      url("/images/silver-snowfall.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 480px;
+  }
+  &__text {
+    a {
+      font-size: $font-size-sm;
+      color: $primary-light-color;
+      transition: transform 400ms, ease-in-out, opacity 400ms ease-in-out;
+      &:hover {
+        opacity: 0.725;
+        transform: scale(0.9675);
+      }
+    }
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 4rem auto;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    h1 {
+      color: $secondary-dark-color;
+      font-size: $font-size-lg;
+    }
+    p {
+      font-size: $font-size-md;
+    }
+  }
+}
