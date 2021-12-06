@@ -29,14 +29,13 @@ button,
   padding: 1rem 1.875rem;
   background: $primary-dark-color;
   background-image: linear-gradient(
-    to bottom right,
+    to right,
     $primary-dark-color,
-    $primary-dark-color,
-    $tertiary-dark-color,
+    $secondary-dark-color,
   );
   color: $primary-light-color;
   border: 0;
-  border-radius: 20px;
+  border-radius: 50px;
   font-weight: 400;
   cursor: pointer;
 }
