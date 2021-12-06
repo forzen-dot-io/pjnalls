@@ -75,7 +75,7 @@ button,
 }
 
 .header nav {
-  padding: 20px;
+  padding: 0.875rem 1.25rem;
 }
 
 .header__logo {
@@ -103,10 +103,37 @@ button,
 .header__links a {
   font-size: 1.125rem;
   color: #4678a9;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  position: relative;
 }
 
 .header__links a:not(:last-child) {
   margin-right: 32px;
+}
+
+.header__links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  background: #ffd963;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd963), to(#e4bf57));
+  background-image: linear-gradient(to bottom, #ffd963, #e4bf57);
+  left: 0;
+  right: 0;
+  bottom: -25px;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.header__links a:hover {
+  color: #947f37;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
 }
 
 .header__cta {
