@@ -35,6 +35,11 @@
     h1 {
       color: $secondary-dark-color;
       font-size: $font-size-lg;
+      &.continuous {
+        font-size: 5rem;
+        color: $primary-dark-color;
+        line-height: 0.5;
+      }
     }
     p {
       font-size: $font-size-md;
