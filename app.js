@@ -1,1 +1,1 @@
-console.log("`app.js` has ran.");
+console.log("`app.js` ran.");
