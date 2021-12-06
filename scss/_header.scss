@@ -12,6 +12,11 @@
     -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     -ms-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 400ms, ease-in-out, opacity 400ms ease-in-out;
+    &:hover {
+      opacity: 0.725;
+      transform: scale(0.9675);
+    }
   }
 
   &__menu {
@@ -29,7 +34,7 @@
     a {
       font-size: $font-size-md;
       color: $secondary-dark-color;
-      transition: color 200ms ease-in-out;
+      transition: color 400ms ease-in-out;
       position: relative;
 
       &:not(:last-child) {
@@ -51,13 +56,15 @@
         right: 0;
         bottom: -25px;
         opacity: 0;
-        transition: opacity 200ms ease-in-out;
+        width: 0%;
+        transition: opacity 400ms ease-in-out, width 200ms ease-in-out;
       }
 
       &:hover {
         color: $tertiary-dark-color;
         &::before {
           opacity: 1;
+          width: 100%;
         }
       }
     }
@@ -66,5 +73,10 @@
   &__cta {
     font-size: $font-size-sm;
     color: $primary-light-color;
+    transition: transform 400ms, ease-in-out, opacity 400ms ease-in-out;
+    &:hover {
+      opacity: 0.725;
+      transform: scale(0.9675);
+    }
   }
 }
