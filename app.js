@@ -1,5 +1,5 @@
 const handleMenuToggle = () =>
-  document.getElementById("menu").classList.toggle("open");
+  document.getElementById("header").classList.toggle("open");
 
 const main = () => {
   document
