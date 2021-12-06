@@ -17,6 +17,9 @@
     .header__overlay {
       opacity: 1;
       z-index: 2;
+      &--menu {
+        top: calc(64px + 1.25rem);
+      }
     }
   }
 
@@ -124,5 +127,29 @@
     z-index: -1;
     display: block;
     transition: opacity 300ms ease-in-out;
+
+    &--menu {
+      position: relative;
+      top: -240px;
+      margin: 0 auto;
+      width: calc(100% - 2rem);
+      max-width: 52em;
+      background: $primary-light-color;
+      border-radius: 8px;
+      a {
+        display: block;
+        text-align: center;
+        font-size: $font-size-md;
+        color: $secondary-dark-color;
+        padding: 1rem;
+        &:hover {
+          color: $tertiary-dark-color;
+        }
+      }
+      :last-child {
+        padding-bottom: 2rem;
+      }
+      transition: top 300ms ease-in-out;
+    }
   }
 }
