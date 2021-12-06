@@ -293,6 +293,12 @@ button,
   font-size: 1.375rem;
 }
 
+.hero__text h1.continuous {
+  font-size: 5rem;
+  color: #561ec2;
+  line-height: 0.5;
+}
+
 .hero__text p {
   font-size: 1.125rem;
 }
