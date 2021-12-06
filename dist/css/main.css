@@ -219,6 +219,7 @@ button,
   position: relative;
   top: -240px;
   margin: 0 auto;
+  padding: 2rem;
   width: calc(100% - 2rem);
   max-width: 52em;
   background: #fefcef;
@@ -232,15 +233,22 @@ button,
   text-align: center;
   font-size: 1.125rem;
   color: #4678a9;
-  padding: 1rem;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+  -webkit-transition: -webkit-text-decoration 300ms ease-in-out;
+  transition: -webkit-text-decoration 300ms ease-in-out;
+  transition: text-decoration 300ms ease-in-out;
+  transition: text-decoration 300ms ease-in-out, -webkit-text-decoration 300ms ease-in-out;
 }
 
 .header__overlay--menu a:hover {
   color: #947f37;
+  -webkit-text-decoration: underline #e4bf57;
+          text-decoration: underline #e4bf57;
 }
 
-.header__overlay--menu :last-child {
-  padding-bottom: 2rem;
+.header__overlay--menu a:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 /** Breakpoints */
