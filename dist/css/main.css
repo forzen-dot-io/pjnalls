@@ -65,7 +65,7 @@ a:hover {
 button,
 .btn {
   padding: 0.875rem 1.875rem;
-  background: #561ec2;
+  background-color: #561ec2;
   background-image: -webkit-gradient(linear, left top, right top, from(#561ec2), to(#4678a9));
   background-image: linear-gradient(to right, #561ec2, #4678a9);
   border: 0;
@@ -74,8 +74,29 @@ button,
   cursor: pointer;
 }
 
+.header {
+  /** Mobile menu styles in "open"-ed state */
+}
+
+.header.open .header__menu > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__menu > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .header nav {
   padding: 0.875rem 1.25rem;
+  position: relative;
+  background: #fefcef;
+  z-index: 3;
 }
 
 .header__logo {
@@ -104,28 +125,14 @@ button,
   width: 28px;
   height: 2px;
   background-color: #561ec2;
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  -webkit-transform-origin: 0 1px;
+          transform-origin: 0 1px;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
 .header__menu > span:not(:last-child) {
   margin-bottom: 8px;
-}
-
-.header__menu.open > span:first-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.header__menu.open > span:nth-child(2) {
-  opacity: 0;
-}
-
-.header__menu.open > span:last-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
 }
 
 .header__links a {
@@ -145,7 +152,7 @@ button,
   position: absolute;
   display: block;
   height: 4px;
-  background: #ffd963;
+  background-color: #ffd963;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd963), to(#e4bf57));
   background-image: linear-gradient(to bottom, #ffd963, #e4bf57);
   left: 0;
@@ -179,6 +186,19 @@ button,
   opacity: 0.725;
   -webkit-transform: scale(0.9675);
           transform: scale(0.9675);
+}
+
+.header__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 30, 194, 0.975)), to(rgba(86, 30, 194, 0.2)));
+  background-image: linear-gradient(to bottom, rgba(86, 30, 194, 0.975), rgba(86, 30, 194, 0.2));
 }
 
 /** Breakpoints */
