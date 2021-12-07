@@ -1,0 +1,28 @@
+.articles {
+  padding: 3rem;
+  max-width: 88em;
+  margin: 3rem auto;
+  &__section {
+    margin: 5rem 0;
+    h2 {
+      color: $secondary-dark-color;
+      font-weight: 500;
+      font-size: $font-size-lg;
+    }
+    h3 {
+      color: $secondary-dark-color;
+      font-weight: 400;
+      font-size: $font-size-md;
+    }
+    p {
+      color: $primary-dark-color;
+    }
+  }
+  article {
+    padding-right: 2rem;
+    
+  }
+  :last-child {
+    padding-right: 0;
+  }
+}
