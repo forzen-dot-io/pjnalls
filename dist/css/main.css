@@ -17,6 +17,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   background-color: #fefcef;
   color: #947f37;
   font-size: 0.875rem;
@@ -308,6 +309,8 @@ button,
   width: 100%;
   min-height: 120px;
   margin: 2rem 0 0 0;
+  position: absolute;
+  bottom: 0;
   padding: 2rem;
 }
 
@@ -321,9 +324,12 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.125rem;
+}
+
+.footer__links a {
   -webkit-transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
   transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
-  font-size: 1.125rem;
 }
 
 .footer__links :not(:last-child) {
@@ -332,7 +338,7 @@ button,
 
 .footer__links :hover {
   color: #e4bf57;
-  border-bottom: solid 3px #ffd963;
+  border-bottom-color: #ffd963;
 }
 
 .footer * {
@@ -379,15 +385,6 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media (min-width: 64em) {
-  .footer .footer__links {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 /*# sourceMappingURL=main.css.map */
