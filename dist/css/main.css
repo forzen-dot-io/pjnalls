@@ -283,6 +283,7 @@ button,
   background-image: linear-gradient(to bottom, rgba(86, 30, 194, 0.975), rgba(86, 30, 194, 0.2));
   z-index: 4;
   opacity: 0;
+  visibility: hidden;
   display: block;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -434,6 +435,7 @@ button,
 
 .footer__logo:hover {
   opacity: 0.725;
+  color: #ffd963;
   -webkit-transform: scale(0.9675);
           transform: scale(0.9675);
 }
