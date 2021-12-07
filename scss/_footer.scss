@@ -2,7 +2,6 @@
   background: $primary-dark-color;
   width: 100%;
   min-height: 120px;
-  margin: 2rem 0 0 0;
   position: absolute;
   bottom: 0;
   padding: 2rem;
@@ -12,13 +11,15 @@
   }
   &__links {
     flex-direction: column;
+    padding: 2rem;
     a {
       transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
-    }
-    font-size: $font-size-md;
-    :not(:last-child) {
       padding-bottom: 1rem;
     }
+    :last-child {
+      padding-bottom: 2rem;
+    }
+    font-size: $font-size-md;
     :hover {
       color: $tertiary-light-color;
       border-bottom-color: $secondary-light-color;
@@ -35,6 +36,16 @@
     -webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     -moz-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     -ms-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 400ms, ease-in-out, opacity 400ms ease-in-out;
+    &:hover {
+      opacity: 0.725;
+      transform: scale(0.9675);
+    }
+  }
+
+  &__cta {
+    font-size: $font-size-sm;
+    color: $primary-light-color;
     transition: transform 400ms, ease-in-out, opacity 400ms ease-in-out;
     &:hover {
       opacity: 0.725;
