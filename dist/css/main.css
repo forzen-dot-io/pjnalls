@@ -304,9 +304,7 @@ button,
 }
 
 .footer {
-  background-color: #561ec2;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#947f37), to(#561ec2));
-  background-image: linear-gradient(to top, #947f37, #561ec2);
+  background: #561ec2;
   width: 100%;
   min-height: 120px;
   margin: 2rem 0 0 0;
@@ -325,6 +323,7 @@ button,
           flex-direction: column;
   -webkit-transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
   transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
+  font-size: 1.125rem;
 }
 
 .footer__links :not(:last-child) {
