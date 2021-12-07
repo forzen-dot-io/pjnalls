@@ -94,7 +94,7 @@ button,
 
 .header.open .header__overlay {
   opacity: 1;
-  z-index: 2;
+  z-index: 4;
 }
 
 .header.open .header__overlay--menu {
@@ -105,7 +105,7 @@ button,
   padding: 0.875rem 1.25rem;
   position: relative;
   background: #fefcef;
-  z-index: 3;
+  z-index: 5;
 }
 
 .header__logo {
@@ -209,7 +209,7 @@ button,
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 30, 194, 0.975)), to(rgba(86, 30, 194, 0.2)));
   background-image: linear-gradient(to bottom, rgba(86, 30, 194, 0.975), rgba(86, 30, 194, 0.2));
   opacity: 0;
-  z-index: -1;
+  z-index: 2;
   display: block;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
