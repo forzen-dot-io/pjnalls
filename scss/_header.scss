@@ -123,6 +123,7 @@
     );
     z-index: 4;
     opacity: 0;
+    visibility: hidden;
     display: block;
     transition: opacity 300ms ease-in-out;
 
