@@ -40,3 +40,15 @@ $breakpoints-down: (
     display: none;
   }
 }
+
+.footer {
+  @include breakpoint-down(md) {
+    flex-direction: column;
+  }
+
+  @include breakpoint-up(lg) {
+    .footer__links {
+      flex-direction: row;
+    }
+  }
+}
