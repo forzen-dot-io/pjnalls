@@ -75,6 +75,80 @@ button,
   cursor: pointer;
 }
 
+.has-fade {
+  visibility: hidden;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
+}
+
 .header {
   /** Mobile menu styles in "open"-ed state */
 }
@@ -95,7 +169,6 @@ button,
 
 .header.open .header__overlay {
   opacity: 1;
-  z-index: 4;
 }
 
 .header.open .header__overlay--menu {
@@ -206,11 +279,10 @@ button,
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 30, 194, 0.975)), to(rgba(86, 30, 194, 0.2)));
   background-image: linear-gradient(to bottom, rgba(86, 30, 194, 0.975), rgba(86, 30, 194, 0.2));
+  z-index: 4;
   opacity: 0;
-  z-index: 2;
   display: block;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -268,8 +340,8 @@ button,
   bottom: 0;
   left: 0;
   right: 0;
-  margin: 4rem auto;
-  padding: 2rem 0;
+  margin: 0 auto;
+  padding: 2rem;
   width: 100%;
   text-align: center;
 }
@@ -308,7 +380,6 @@ button,
   background: #561ec2;
   width: 100%;
   min-height: 120px;
-  margin: 2rem 0 0 0;
   position: absolute;
   bottom: 0;
   padding: 2rem;
@@ -324,16 +395,18 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 2rem;
   font-size: 1.125rem;
 }
 
 .footer__links a {
   -webkit-transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
   transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
+  padding-bottom: 1rem;
 }
 
-.footer__links :not(:last-child) {
-  padding-bottom: 1rem;
+.footer__links :last-child {
+  padding-bottom: 2rem;
 }
 
 .footer__links :hover {
@@ -360,6 +433,21 @@ button,
 }
 
 .footer__logo:hover {
+  opacity: 0.725;
+  -webkit-transform: scale(0.9675);
+          transform: scale(0.9675);
+}
+
+.footer__cta {
+  font-size: 0.875rem;
+  color: #fefcef;
+  -webkit-transition: ease-in-out, opacity 400ms ease-in-out, -webkit-transform 400ms;
+  transition: ease-in-out, opacity 400ms ease-in-out, -webkit-transform 400ms;
+  transition: transform 400ms, ease-in-out, opacity 400ms ease-in-out;
+  transition: transform 400ms, ease-in-out, opacity 400ms ease-in-out, -webkit-transform 400ms;
+}
+
+.footer__cta:hover {
   opacity: 0.725;
   -webkit-transform: scale(0.9675);
           transform: scale(0.9675);
