@@ -3,6 +3,8 @@
   width: 100%;
   min-height: 120px;
   margin: 2rem 0 0 0;
+  position: absolute;
+  bottom: 0;
   padding: 2rem;
   * {
     color: $primary-light-color;
@@ -10,14 +12,16 @@
   }
   &__links {
     flex-direction: column;
-    transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
+    a {
+      transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
+    }
     font-size: $font-size-md;
     :not(:last-child) {
       padding-bottom: 1rem;
     }
     :hover {
       color: $tertiary-light-color;
-      border-bottom: solid 3px $secondary-light-color;
+      border-bottom-color: $secondary-light-color;
     }
   }
   * {
