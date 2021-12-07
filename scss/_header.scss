@@ -16,7 +16,7 @@
     }
     .header__overlay {
       opacity: 1;
-      z-index: 2;
+      z-index: 4;
       &--menu {
         top: calc(64px + 1.25rem);
       }
@@ -27,7 +27,7 @@
     padding: 0.875rem 1.25rem;
     position: relative;
     background: $primary-light-color;
-    z-index: 3;
+    z-index: 5;
   }
 
   &__logo {
@@ -124,7 +124,7 @@
       rgba($primary-dark-color, 0.2)
     );
     opacity: 0;
-    z-index: -1;
+    z-index: 2;
     display: block;
     transition: opacity 300ms ease-in-out;
 
