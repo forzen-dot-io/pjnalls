@@ -75,12 +75,7 @@
         position: absolute;
         display: block;
         height: 4px;
-        background-color: $secondary-light-color;
-        background-image: linear-gradient(
-          to bottom,
-          $secondary-light-color,
-          $tertiary-light-color
-        );
+        background: $primary-dark-color; 
         left: 0;
         right: 0;
         bottom: -25px;
