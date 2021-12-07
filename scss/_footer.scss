@@ -39,6 +39,7 @@
     transition: transform 400ms, ease-in-out, opacity 400ms ease-in-out;
     &:hover {
       opacity: 0.725;
+      color: $secondary-light-color;
       transform: scale(0.9675);
     }
   }
