@@ -236,9 +236,7 @@ button,
   position: absolute;
   display: block;
   height: 4px;
-  background-color: #ffd963;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd963), to(#e4bf57));
-  background-image: linear-gradient(to bottom, #ffd963, #e4bf57);
+  background: #561ec2;
   left: 0;
   right: 0;
   bottom: -25px;
