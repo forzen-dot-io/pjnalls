@@ -315,6 +315,7 @@ button,
 
 .footer * {
   color: #fefcef;
+  border-bottom: solid 3px transparent;
 }
 
 .footer__links {
@@ -322,10 +323,17 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
+  transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .footer__links :not(:last-child) {
   padding-bottom: 1rem;
+}
+
+.footer__links :hover {
+  color: #e4bf57;
+  border-bottom: solid 3px #ffd963;
 }
 
 .footer * {
