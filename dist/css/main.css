@@ -382,7 +382,6 @@ button,
   background: #561ec2;
   width: 100%;
   min-height: 120px;
-  position: absolute;
   bottom: 0;
   padding: 2rem;
 }
