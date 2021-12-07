@@ -1,10 +1,5 @@
 .footer {
-  background-color: $primary-dark-color;
-  background-image: linear-gradient(
-    to top,
-    $tertiary-dark-color,
-    $primary-dark-color
-  );
+  background: $primary-dark-color;
   width: 100%;
   min-height: 120px;
   margin: 2rem 0 0 0;
@@ -16,6 +11,7 @@
   &__links {
     flex-direction: column;
     transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
+    font-size: $font-size-md;
     :not(:last-child) {
       padding-bottom: 1rem;
     }
