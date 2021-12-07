@@ -376,6 +376,40 @@ button,
   font-size: 1.125rem;
 }
 
+.articles {
+  padding: 3rem;
+  max-width: 88em;
+  margin: 3rem auto;
+}
+
+.articles__section {
+  margin: 5rem 0;
+}
+
+.articles__section h2 {
+  color: #4678a9;
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+
+.articles__section h3 {
+  color: #4678a9;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.articles__section p {
+  color: #561ec2;
+}
+
+.articles article {
+  padding-right: 2rem;
+}
+
+.articles :last-child {
+  padding-right: 0;
+}
+
 .footer {
   background: #561ec2;
   width: 100%;
@@ -468,8 +502,8 @@ button,
   }
 }
 
-@media (max-width: 63.9375em) {
-  .footer {
+@media (max-width: 39.9375em) {
+  .footer, .articles__showcase {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
