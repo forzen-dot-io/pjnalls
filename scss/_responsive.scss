@@ -41,8 +41,8 @@ $breakpoints-down: (
   }
 }
 
-.footer {
-  @include breakpoint-down(md) {
+.footer, .articles__showcase {
+  @include breakpoint-down(sm) {
     flex-direction: column;
   }
 }
