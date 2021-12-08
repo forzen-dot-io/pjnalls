@@ -10,19 +10,16 @@
   }
   &__links {
     flex-direction: column;
-    padding: 3rem;
+    padding: 3rem 0;
     a {
       transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
-      padding-bottom: 1rem;
+      padding: 1rem 0;
     }
     font-size: $font-size-md;
     :hover {
       color: $tertiary-light-color;
       border-bottom-color: $secondary-light-color;
     }
-  }
-  * {
-    padding: 1rem;
   }
   &__logo {
     text-decoration: none;
