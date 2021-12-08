@@ -1,7 +1,9 @@
+@import "./placeholder";
+
 .articles {
   padding: 3rem;
   max-width: 88em;
-  margin: 3rem auto;
+  margin: 0 auto 3rem auto;
   &__section {
     margin: 5rem 0;
     h2 {
@@ -18,9 +20,8 @@
       color: $primary-dark-color;
     }
   }
-  article {
+  .article {
     padding-right: 2rem;
-    
   }
   :last-child {
     padding-right: 0;
