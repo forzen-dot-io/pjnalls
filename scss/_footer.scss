@@ -10,13 +10,10 @@
   }
   &__links {
     flex-direction: column;
-    padding: 2rem;
+    padding: 3rem;
     a {
       transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
       padding-bottom: 1rem;
-    }
-    :last-child {
-      padding-bottom: 2rem;
     }
     font-size: $font-size-md;
     :hover {
