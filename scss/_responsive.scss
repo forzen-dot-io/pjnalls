@@ -46,3 +46,9 @@ $breakpoints-down: (
     flex-direction: column;
   }
 }
+
+.article {
+  @include breakpoint-down(sm) {
+    margin: 1rem 0 3rem 0;
+  }
+}
