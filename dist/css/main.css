@@ -289,6 +289,10 @@ button,
 }
 
 .header__overlay--menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: -240px;
   margin: 0 auto;
@@ -302,26 +306,18 @@ button,
 }
 
 .header__overlay--menu a {
-  display: block;
   text-align: center;
   font-size: 1.125rem;
   color: #4678a9;
-  -webkit-text-decoration: underline transparent;
-          text-decoration: underline transparent;
-  -webkit-transition: -webkit-text-decoration 300ms ease-in-out;
-  transition: -webkit-text-decoration 300ms ease-in-out;
-  transition: text-decoration 300ms ease-in-out;
-  transition: text-decoration 300ms ease-in-out, -webkit-text-decoration 300ms ease-in-out;
+  border-bottom: solid 3px transparent;
+  -webkit-transition: border-bottom-color 300ms ease-in-out;
+  transition: border-bottom-color 300ms ease-in-out;
+  padding: 1rem 0;
 }
 
 .header__overlay--menu a:hover {
   color: #947f37;
-  -webkit-text-decoration: underline #e4bf57;
-          text-decoration: underline #e4bf57;
-}
-
-.header__overlay--menu a:not(:last-child) {
-  margin-bottom: 2rem;
+  border-bottom-color: #e4bf57;
 }
 
 .hero__image {
@@ -441,23 +437,19 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem;
+  padding: 3rem 0;
   font-size: 1.125rem;
 }
 
 .footer__links a {
   -webkit-transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
   transition: border-bottom 300ms ease-in-out, color 300ms ease-in-out;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 .footer__links :hover {
   color: #e4bf57;
   border-bottom-color: #ffd963;
-}
-
-.footer * {
-  padding: 1rem;
 }
 
 .footer__logo {
