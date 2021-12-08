@@ -1,0 +1,12 @@
+.article {
+  &__image {
+    height: 160px;
+  }
+  .placeholder {
+    background-color: $tertiary-accent-color;
+    background-image: linear-gradient(to bottom, $primary-accent-color, $tertiary-accent-color);
+    color: #fff;
+    font-size: $font-size-lg;
+    font-weight: 700;
+  }
+}
