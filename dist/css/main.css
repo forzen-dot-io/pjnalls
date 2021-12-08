@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #fefcef;
+  background-color: #fff;
   color: #947f37;
   font-size: 0.875rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -66,9 +66,9 @@ a:hover {
 button,
 .btn {
   padding: 0.5rem 1.875rem;
-  background: #561ec2;
-  background-image: -webkit-gradient(linear, left top, right top, from(#561ec2), to(#4678a9));
-  background-image: linear-gradient(to right, #561ec2, #4678a9);
+  background: #360ea2;
+  background-image: -webkit-gradient(linear, left top, right top, from(#360ea2), to(#4678a9));
+  background-image: linear-gradient(to right, #360ea2, #4678a9);
   border: 0;
   border-radius: 50px;
   font-weight: 400;
@@ -178,7 +178,7 @@ button,
 .header nav {
   padding: 0.875rem 1.25rem;
   position: relative;
-  background: #fefcef;
+  background: #fff;
   z-index: 5;
 }
 
@@ -186,7 +186,7 @@ button,
   text-decoration: none;
   font-size: 28px;
   font-weight: 700;
-  color: #561ec2;
+  color: #360ea2;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -moz-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -208,7 +208,7 @@ button,
   display: block;
   width: 28px;
   height: 2px;
-  background-color: #561ec2;
+  background-color: #360ea2;
   -webkit-transform-origin: 0 1px;
           transform-origin: 0 1px;
   -webkit-transition: all 300ms ease-in-out;
@@ -236,7 +236,7 @@ button,
   position: absolute;
   display: block;
   height: 4px;
-  background: #561ec2;
+  background: #360ea2;
   left: 0;
   right: 0;
   bottom: -25px;
@@ -278,8 +278,8 @@ button,
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 30, 194, 0.975)), to(rgba(86, 30, 194, 0.2)));
-  background-image: linear-gradient(to bottom, rgba(86, 30, 194, 0.975), rgba(86, 30, 194, 0.2));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 14, 162, 0.975)), to(rgba(54, 14, 162, 0.2)));
+  background-image: linear-gradient(to bottom, rgba(54, 14, 162, 0.975), rgba(54, 14, 162, 0.2));
   z-index: 4;
   opacity: 0;
   visibility: hidden;
@@ -323,8 +323,8 @@ button,
 .hero__image {
   position: relative;
   background-color: #fefcef;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#fefcef), color-stop(rgba(254, 252, 239, 0.8)), to(rgba(255, 217, 99, 0.33))), url("/images/silver-snowfall.jpg");
-  background-image: linear-gradient(to top, #fefcef, rgba(254, 252, 239, 0.8), rgba(255, 217, 99, 0.33)), url("/images/silver-snowfall.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(rgba(254, 252, 239, 0.8)), to(rgba(255, 217, 99, 0.33))), url("/images/silver-snowfall.jpg");
+  background-image: linear-gradient(to top, white, rgba(254, 252, 239, 0.8), rgba(255, 217, 99, 0.33)), url("/images/silver-snowfall.jpg");
   background-position: bottom;
   background-size: cover;
   height: 480px;
@@ -364,7 +364,7 @@ button,
 
 .hero__text h1.continuous {
   font-size: 5rem;
-  color: #561ec2;
+  color: #360ea2;
   line-height: 0.5;
 }
 
@@ -386,9 +386,19 @@ button,
 }
 
 .articles {
+  background: #fff;
   padding: 3rem;
   max-width: 88em;
   margin: 0 auto 3rem auto;
+}
+
+.articles h2 {
+  margin: 5rem 0;
+  padding: 3rem;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #4678a9;
 }
 
 .articles__section {
@@ -397,18 +407,18 @@ button,
 
 .articles__section h2 {
   color: #4678a9;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.375rem;
 }
 
 .articles__section h3 {
   color: #4678a9;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.125rem;
 }
 
 .articles__section p {
-  color: #561ec2;
+  color: #360ea2;
 }
 
 .articles .article {
@@ -420,7 +430,7 @@ button,
 }
 
 .footer {
-  background: #561ec2;
+  background: #360ea2;
   width: 100%;
   min-height: 120px;
   bottom: 0;
@@ -456,7 +466,7 @@ button,
   text-decoration: none;
   font-size: 28px;
   font-weight: 700;
-  color: #fefcef;
+  color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -moz-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
