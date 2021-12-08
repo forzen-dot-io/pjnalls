@@ -519,4 +519,10 @@ button,
             flex-direction: column;
   }
 }
+
+@media (max-width: 39.9375em) {
+  .article {
+    margin: 1rem 0 3rem 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
