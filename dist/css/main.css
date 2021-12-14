@@ -421,14 +421,6 @@ button,
   color: #360ea2;
 }
 
-.articles .article {
-  padding-right: 2rem;
-}
-
-.articles :last-child {
-  padding-right: 0;
-}
-
 .footer {
   background: #360ea2;
   width: 100%;
